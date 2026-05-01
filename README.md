@@ -15,21 +15,14 @@ This project simulates a SOC Analyst's decision-making process through automatio
 * **Protection:** Adjusts the HPA (Horizontal Pod Autoscaler) maximum limit to prevent "Wallet Exhaustion" (EDoS).
 
 ### Key Technical Components
-Component
-Role in Project
-Security Outcome
-NetworkPolicies
-Layer 3/4 Firewall
-Granular segmentation and instantaneous traffic blocking.
-Ingress-Nginx
-Layer 7 Protection
-Implementation of rate-limiting and WAF-like rules.
-Prometheus/KQL
-Monitoring Engine
-Real-time observability and threat detection.
-Python / Shell
-SOAR Orchestrator
-The "Brain" that executes kubectl commands based on alerts.
+
+| Component | Role in Project | Security Outcome |
+| --------- | --------------- | ---------------- |
+
+| NetworkPolicies | Layer 3/4 Firewall | Granular segmentation and instantaneous traffic blocking. |
+| Ingress-Nginx | Layer 7 Protection | Implementation of rate-limiting and WAF-like rules. |
+| Prometheus/KQL | Monitoring Engine | Real-time observability and threat detection. |
+| Python / Shell | SOAR Orchestrator | The "Brain" that executes kubectl commands based on alerts. |
 
 
 ### SecOps Evidence (The Portfolio "Gold")
