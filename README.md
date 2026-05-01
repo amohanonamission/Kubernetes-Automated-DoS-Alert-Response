@@ -18,7 +18,6 @@ This project simulates a SOC Analyst's decision-making process through automatio
 
 | Component | Role in Project | Security Outcome |
 | --------- | --------------- | ---------------- |
-
 | NetworkPolicies | Layer 3/4 Firewall | Granular segmentation and instantaneous traffic blocking. |
 | Ingress-Nginx | Layer 7 Protection | Implementation of rate-limiting and WAF-like rules. |
 | Prometheus/KQL | Monitoring Engine | Real-time observability and threat detection. |
