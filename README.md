@@ -212,7 +212,7 @@ docs/
 .
 ├── README.md
 ├── scripts/
-│   ├── alert_trigger.sh
+│   ├── alert-trigger.sh
 │   └── prevention.py
 ├── snort/
 │   └── local.rules
@@ -228,8 +228,6 @@ docs/
 └── reports/
     └── project-report.pdf
 ```
-
-Files can be adjusted to match the final contents of the repository.
 
 ---
 
