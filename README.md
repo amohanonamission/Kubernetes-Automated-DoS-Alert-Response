@@ -100,7 +100,6 @@ Example configuration is provided in:
 snort/local.rules
 ```
 
-
 The Snort configuration included information such as:
 
 * Alert priority
@@ -130,7 +129,6 @@ The implementation is provided in:
 ```text
 scripts/alert_trigger.sh
 ```
-![scripts/alert-trigger.sh](scripts/alert-trigger.sh)
 
 This component acts as the bridge between the IDS and the automated response mechanism.
 
