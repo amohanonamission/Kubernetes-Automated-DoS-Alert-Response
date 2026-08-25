@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+#This script parses the Snort logs, determines attacked target, and scales down resources 
+
 import pyparsing as pyp
 import itertools
 import subprocess
