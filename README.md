@@ -99,7 +99,7 @@ Example configuration is provided in:
 ```text
 snort/local.rules
 ```
-![snort/local.rules](snort/local.rules)
+
 
 The Snort configuration included information such as:
 
