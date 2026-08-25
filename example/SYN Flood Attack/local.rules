@@ -1,0 +1,4 @@
+# Paste this alert rule in the /etc/snort/rules/local.rules file
+# This rule instructs Snort IDS to detect any SYN Flood DOS attack traffic, and generate logs.
+
+alert tcp any any -> $HOME_NET any (flags: S; msg:"Possible DoS Attack Type : SYN flood"; flow:stateless; sid:3; detection_filter:track by_dst, count 20, seconds 10;)
