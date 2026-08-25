@@ -157,7 +157,6 @@ The implementation is provided in:
 ```text
 scripts/prevention.py
 ```
-![scripts/prevention.py](scripts/prevention.py)
 
 ### Response Concept
 
@@ -201,7 +200,6 @@ Screenshots from the original implementation are available under:
 ```text
 docs/
 ```
-
 ---
 
 ## Repository Structure
