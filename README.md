@@ -186,6 +186,8 @@ The purpose of this response was to demonstrate automated resource-protection lo
 
 The system was tested using a controlled SYN-flood scenario generated from a Kali Linux machine.
 
+![Attack Test](docs/ddos-attack-initiation.png)
+
 The test traffic was directed toward the Kubernetes environment while Snort monitored the traffic.
 
 The resulting workflow demonstrated:
@@ -199,11 +201,8 @@ The resulting workflow demonstrated:
 7. SSH-based communication with the Kubernetes controller
 8. Automated scaling response
 
-Screenshots from the original implementation are available under:
+![Tomcat Service Scaling](docs/tomcat-service-running.png)
 
-```text
-docs/
-```
 ---
 
 ## Repository Structure
