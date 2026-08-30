@@ -84,8 +84,6 @@ Traffic entered through a router and was forwarded to the appropriate Kubernetes
 
 A separate IDS VM monitored the traffic and generated alerts using Snort.
 
-![App Deployment](docs/deployment-node.png)
-
 ---
 
 ## Detection
@@ -113,6 +111,7 @@ The Snort configuration included information such as:
 
 These fields were subsequently consumed by the automated response script.
 
+
 ---
 
 ## Alert Trigger
@@ -134,6 +133,8 @@ scripts/alert_trigger.sh
 
 This component acts as the bridge between the IDS and the automated response mechanism.
 
+![Active Detection](detection-in-operation.png)
+Image illustrates the Snort IDS and the Alert Trigger Working together.
 ---
 
 ## Automated Response
