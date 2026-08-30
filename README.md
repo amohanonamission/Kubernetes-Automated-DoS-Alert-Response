@@ -332,3 +332,5 @@ The repository preserves the implementation and evidence from that environment r
 This project is intended for **authorized security research, education, and defensive testing only**.
 
 Traffic-generation and attack-simulation components should only be used against systems and networks where the operator has explicit authorization to perform security testing.
+
+Do not run the automated DoS simulation scripts against production systems or networks without explicit authorization. The author accepts no liability for misuse or damage caused by this software.
