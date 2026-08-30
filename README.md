@@ -133,8 +133,8 @@ scripts/alert_trigger.sh
 
 This component acts as the bridge between the IDS and the automated response mechanism.
 
-![Active Detection](detection-in-operation.png)
-Image illustrates the Snort IDS and the Alert Trigger Working together.
+![Active Detection](docs/detection-in-operation.png)
+**Image illustrates the Snort IDS and the Alert Trigger Working together.**
 
 ---
 
