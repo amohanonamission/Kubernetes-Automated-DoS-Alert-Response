@@ -84,6 +84,8 @@ Traffic entered through a router and was forwarded to the appropriate Kubernetes
 
 A separate IDS VM monitored the traffic and generated alerts using Snort.
 
+![App Deployment](docs/deployment-node.png)
+
 ---
 
 ## Detection
