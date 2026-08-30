@@ -135,6 +135,7 @@ This component acts as the bridge between the IDS and the automated response mec
 
 ![Active Detection](detection-in-operation.png)
 Image illustrates the Snort IDS and the Alert Trigger Working together.
+
 ---
 
 ## Automated Response
