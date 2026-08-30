@@ -88,6 +88,8 @@ A separate IDS VM monitored the traffic and generated alerts using Snort.
 
 ## Detection
 
+![Active Detection](docs/detection-in-operation.png)
+
 ### Snort IDS
 
 Snort was configured with a local detection rule for the SYN-flood test scenario.
@@ -114,7 +116,7 @@ These fields were subsequently consumed by the automated response script.
 
 ---
 
-## Alert Trigger
+### Alert Trigger
 
 The alert trigger script continuously monitored the Snort log for newly generated alerts.
 
@@ -133,8 +135,6 @@ scripts/alert_trigger.sh
 
 This component acts as the bridge between the IDS and the automated response mechanism.
 
-![Active Detection](docs/detection-in-operation.png)
-**Image illustrates the Snort IDS and the Alert Trigger Working together.**
 
 ---
 
